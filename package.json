@@ -1,0 +1,51 @@
+{
+  "name": "curso-protractor-tat",
+  "version": "1.0.0",
+  "description": "Projeto para o curso de Protractor da Escola TAT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix",
+    "pretest": "webdriver-manager update",
+    "test": "npm run test:chrome && npm run test:firefox",
+    "test:chrome": "protractor configurations/chromeConfig.js",
+    "test:firefox": "protractor configurations/firefoxConfig.js"
+  },
+  "standard": {
+    "globals": [
+      "browser",
+      "beforeAll",
+      "beforeEach",
+      "by",
+      "describe",
+      "element",
+      "expert",
+      "it"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/curso-protractor-tat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wlsf82/curso-protractor-tat/issues"
+  },
+  "homepage": "https://github.com/wlsf82/curso-protractor-tat#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "protractor": "^7.0.0",
+    "protractor-helper": "^4.1.9",
+    "standard": "^14.3.4",
+    "standardjs": "^1.0.0-alpha",
+    "standardx": "^5.0.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.2.0"
+  }
+}
