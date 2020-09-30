@@ -2,7 +2,7 @@ name: Lint and tests
 on: push
 jobs:
   build:
-    run-on: ubutu-latest
+    runs-on: ubutu-latest
     steps:
     -name: project checkout
      uses: actions/ checkout@v1
