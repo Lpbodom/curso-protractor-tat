@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "npx standard",
     "lint:fix": "npx standard --fix",
-    "pretest": "webdriver-manager update",
+    "pretest:github": "webdriver-manager update --versions.chrome 81.0.4044.138",
+    "pretest:local": "webdriver-manager update",
     "test": "npm run test:chrome && npm run test:firefox",
     "test:chrome": "protractor configurations/chromeConfig.js",
     "test:firefox": "protractor configurations/firefoxConfig.js"
@@ -39,6 +40,7 @@
     "@typescript-eslint/parser": "^4.0.0",
     "babel-eslint": "^10.1.0",
     "eslint-plugin-flowtype": "^5.2.0",
+    "faker": "^5.1.0",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.1.9",
     "standard": "^14.3.4",
