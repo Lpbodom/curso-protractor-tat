@@ -2,7 +2,7 @@ const helper = require('protractor-helper')
 
 const Tag = require('../page-objects/tag')
 
-fdescribe('Given I\'m at random tag page', () => {
+describe('Given I\'m at random tag page', () => {
   let tag
 
   beforeAll(() => {

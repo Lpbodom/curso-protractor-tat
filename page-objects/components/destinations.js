@@ -10,3 +10,4 @@ class Destinations {
     }
   }
   module.exports = Destinations
+  

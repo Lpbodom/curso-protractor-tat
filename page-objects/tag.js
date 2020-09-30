@@ -6,7 +6,7 @@ class Tag{
         this.destinations = new DestinationsComponent()
     }
     visit(){  
-        browser.get('/tags/${randomNumberBetweenOneAnd(5)}')
+        browser.get(`/tags/${randomNumberBetweenOneAnd(5)}`)
        
     }
 }
