@@ -16,8 +16,8 @@ describe('Given I\'m at the home page', () => {
 
       expect(homepage.tags.cards.count()).toBe(5)
     })
-    describe(' Whem I look to the first card in isolation',() => {
-      it('Then I see an image, a heading, and an anchor',() =>{
+    describe(' Whem I look to the first card in isolation', () => {
+      it('Then I see an image, a heading, and an anchor', () => {
         helper.waitForElementVisibility(homepage.tags.imageOfFirstCard)
         helper.waitForElementVisibility(homepage.tags.headingOfFirstCard)
         helper.waitForElementVisibility(homepage.tags.anchorOfFirstCard)

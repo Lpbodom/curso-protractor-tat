@@ -16,8 +16,8 @@ describe('Given I\'m at random tag page', () => {
 
       expect(tag.destinations.cards.count()).toBe(3)
     })
-    describe(' Whem I look to the first card in isolation',() => {
-      it('Then I see an image, a heading, a paragraph and an anchor',() =>{
+    describe(' Whem I look to the first card in isolation', () => {
+      it('Then I see an image, a heading, a paragraph and an anchor', () => {
         helper.waitForElementVisibility(tag.destinations.imageOfFirstCard)
         helper.waitForElementVisibility(tag.destinations.headingOfFirstCard)
         helper.waitForElementVisibility(tag.destinations.paragraphOfFirstCard)
