@@ -27,9 +27,6 @@
     "url": "git+https://github.com/lpbodom/curso-protractor-tat.git"
   },
   "keywords": [],
-  "protractor",
-  "testing",
-  "eze",
   "author": "Luiz PUlo <lpbodom@gmail.com>",
   "license": "MIT",
   "bugs": {
